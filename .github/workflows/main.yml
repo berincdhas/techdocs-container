@@ -4,7 +4,7 @@ name: Main branch workflow
 
 on:
   push:
-    branches: [main]
+    branches: [patch-1]
 
 jobs:
   main:
@@ -32,7 +32,7 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: spotify/techdocs:latest
+          tags: berin14/techdocs:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
