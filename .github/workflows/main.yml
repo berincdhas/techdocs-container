@@ -3,6 +3,7 @@
 name: Main branch workflow
 
 on:
+  workflow_dispatch:
   push:
     branches: [patch-1]
 
